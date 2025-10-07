@@ -1,0 +1,36 @@
+# Ignore dependencies
+node_modules/
+
+# Ignore environment files
+.env
+
+# Ignore config folder
+config/
+
+_git_backup/
+
+# Ignore logs
+*.log
+logs/
+
+# Ignore build/cache/temp files
+dist/
+build/
+.cache/
+tmp/
+temp/
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore IDE/editor config
+.vscode/
+.idea/
+
+# Ignore test coverage
+coverage/
+
+# Ignore DB files (if any local dev DBs)
+*.sqlite
+*.sqlite3
