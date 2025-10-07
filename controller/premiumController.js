@@ -32,7 +32,7 @@ exports.premium = async (req, res) => {
       },
       order_meta: {
         return_url:
-          "http://localhost:5173/payment-status?order_id={order_id}",
+          "https://expensetracker1101.netlify.app/payment-status?order_id={order_id}",
       },
     };
 

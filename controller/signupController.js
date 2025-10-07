@@ -85,7 +85,7 @@ exports.forgetPassword = async (req, res) => {
       userId: user.id,
     });
 
-    const resetLink = `http://localhost:5173/resetpassword/${id}`;
+    const resetLink = `https://expensetracker1101.netlify.app/resetpassword/${id}`;
 
     // Create transporter using Brevo
     const transporter = nodemailer.createTransport({
