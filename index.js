@@ -10,7 +10,11 @@ const Order = require('./model/OrderModel')
 const ForgetPassword = require('./model/ForgetPasswordModel')
 const cors = require('cors')
 app.use(express.json());
-app.use(cors())
+app.use(cors({
+  origin: 'https://expensetracker1101.netlify.app',
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
+  credentials: true
+}));
 app.use('/', signupRoutes)
 app.use('/expense', expenseRoutes)
 app.use('/premium', premiumRoutes);
